@@ -1,2 +1,1 @@
-# treehouse-exercise-quiz
 
