@@ -1,0 +1,41 @@
+alert("Welcome to the Ultimate California Quiz!");
+var score = 0;
+
+var question1 = prompt("First question: What is the capitol of California?");
+if(question1.toUpperCase() === "SACRAMENTO") {
+  score += 1;
+}
+
+var question2 = prompt("Second question: What is state flower?");
+if(question2.toUpperCase() === "POPPY") {
+  score += 1;
+}
+
+var question3 = prompt("Third question: What is state bird?");
+if(question3.toUpperCase() === "QUAIL") {
+  score += 1;
+} 
+
+var question4 = prompt("Fourth question: What is the animal on the state flag?");
+if(question4.toUpperCase() === "BEAR") {
+   score += 1;
+} 
+
+var question5 = prompt("Fifth question: California is the called the 'what' state?");
+if(question5.toUpperCase() === "GOLDEN") {
+   score += 1;
+}
+
+document.write("<h3>You got " + score + " answers correct.</h3>");
+
+if(score === 5) {
+  document.write("<h3>You get a gold crown!</h3>");
+} else if(score >= 3) {
+          document.write("<h3>You get a silver crown!</h3>");
+      } else if(score >= 1) {
+                document.write("<h3>You get a bronze crown!</h3>");
+        } else {
+          document.write("<h3>You do not get a crown.</h3>");
+        }
+        
+  
